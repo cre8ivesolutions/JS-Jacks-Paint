@@ -19,19 +19,20 @@ function addOpacity(event) {
 function removeOpacity(event) {
     //remove appropriate CSS class
     if(!this.classList.contains('dim')){
-        this.classList.remove('dim');
+        this.classList.remove('dim')
     }
 
     let element = document.getElementById('color-price');
         element.textContent = '';
-        
+// what is this? ^
     let color = document.getElementById('color-name');
         color.textContent = ''; 
-
-    event.preventDefault();    
+// what is this? ^
+    event.preventDefault();
 }
 
 function getProductInfo(partNumber) {
+// why 'partNumber'?^
     let price;
     let colorName;  
     
@@ -85,11 +86,13 @@ function getProductInfo(partNumber) {
     }
 
     function updatePrice(colorName, price) {       
-        let colorPrice = document.getElementById('color-price'); // select element with corresponding id
+        // select element with corresponding id
+        let colorPrice = document.getElementById('color-price'); 
         // display price
         colorPrice.textContent = price;
 
-        let color = document.getElementById('color-name'); // select element with corresponding id
+        // select element with corresponding id
+        let color = document.getElementById('color-name'); 
         //display color name
         color.textContenet = colorName;
     }
