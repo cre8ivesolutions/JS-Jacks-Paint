@@ -16,7 +16,6 @@ function addOpacity(event) {
     }
     getProductInfo(event.target.id);     
 }
-
 function removeOpacity(event) {
     //remove appropriate CSS class
     if(this.classList.contains('dim')){
@@ -93,6 +92,6 @@ function getProductInfo(partNumber) {
         // select element with corresponding id
         let color = document.getElementById('color-name'); 
         //display color name
-        color.textContenet = colorName;
+        color.textContent = colorName;
     }
 }
